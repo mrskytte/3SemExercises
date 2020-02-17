@@ -2,12 +2,26 @@
 
 const name = "Albus Percival Wulfric Brian Dumbledore";
 const len = name.length;
-console.log(name);
+// console.log(name);
 
-console.log(`The lenght of the name is ${len}`);
-console.log(`The second indexed character is ${name[2]}`);
-console.log(`The sixth indexed character is ${name[6]}`);
-console.log(`The D is number ${name.indexOf("D")}`);
-console.log(`The last e in Dumbledore is index number ${len - 1}`);
+// console.log(`The lenght of the name is ${len}`);
+// console.log(`The second indexed character is ${name[2]}`);
+// console.log(`The sixth indexed character is ${name[6]}`);
+// console.log(`The D is number ${name.indexOf("D")}`);
+// console.log(`The last e in Dumbledore is index number ${len - 1}`);
 
-console.log(name.endsWith("Dumbledore", len));
+// console.log(name.endsWith("Dumbledore", len));
+
+let person1 = {
+  firstName: "Peter",
+  age: 29,
+  student: false
+};
+
+let person2 = {
+  firstName: "Other Peter",
+  age: 28,
+  student: false
+};
+
+let person3 = person1;
