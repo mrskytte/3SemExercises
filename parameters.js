@@ -1,12 +1,19 @@
 "use strict";
 
-let firstName = "Chris";
-let lastName = "Skytte";
-
-function sayHello(firstName, lastName) {
-  console.log(`Hello ${firstName} ${lastName}`);
+function presentPets(name, animalType, animalName) {
+  console.log(
+    `My name is ${name}, I have a ${animalType} called ${animalName}`
+  );
 }
 
-sayHello();
+let test = "John";
+let Bumbum = "cat";
+let Nono = "Poppy";
 
-sayHello(lastName, firstName);
+presentPets(test, Bumbum, Nono);
+
+presentPets("Chris", "dog", "Piper");
+
+presentPets("Chris", Bumbum, Nono);
+
+presentPets(Bumbum, Nono, test);
