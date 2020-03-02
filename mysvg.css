@@ -1,0 +1,13 @@
+#rect {
+  stroke-dasharray: 140;
+  stroke-dashoffset: 140;
+  fill: dodgerblue;
+  stroke: firebrick;
+  animation: changeRect 3s infinite;
+}
+
+@keyframes changeRect {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

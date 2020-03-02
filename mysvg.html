@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My SVG</title>
+    <link rel="stylesheet" href="mysvg.css" />
+  </head>
+  <body>
+    <h1>My SVGs</h1>
+    <svg
+      width="500"
+      height="600"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      view-box="0 0 500 600"
+    >
+      <g id="rect">
+        <rect x="10" y="10" width="40" height="30"></rect>
+      </g>
+      <circle cx="70" cy="25" r="15" fill="transparent" stroke="black"></circle>
+
+      <ellipse
+        cx="30"
+        cy="60"
+        rx="20"
+        ry="10"
+        fill="transparent"
+        stroke="black"
+      ></ellipse>
+
+      <line x1="55" x2="75" y1="50" y2="70" stroke="black"></line>
+
+      <polyline
+        points="10 10 50 40 70 25 70 40 30 60  50 60 55 50 75 70"
+        stroke="red"
+        fill="transparent"
+      ></polyline>
+      <path
+        d="M 10 10 L 50 40 70 25 70 40 30 60 50 60 55 50 75 70 z"
+        stroke="blue"
+        fill="transparent"
+      ></path>
+    </svg>
+
+    <!-- <svg
+      width="200"
+      height="250"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        x="10"
+        y="10"
+        width="30"
+        height="30"
+        stroke="black"
+        fill="transparent"
+        stroke-width="5"
+      />
+      <rect
+        x="60"
+        y="10"
+        rx="5"
+        ry="5"
+        width="30"
+        height="30"
+        stroke="black"
+        fill="transparent"
+        stroke-width="5"
+      />
+
+      <circle
+        cx="25"
+        cy="75"
+        r="20"
+        stroke="red"
+        fill="transparent"
+        stroke-width="5"
+      />
+      <ellipse
+        cx="75"
+        cy="75"
+        rx="20"
+        ry="5"
+        stroke="red"
+        fill="transparent"
+        stroke-width="5"
+      />
+
+      <line
+        x1="10"
+        x2="50"
+        y1="110"
+        y2="150"
+        stroke="orange"
+        stroke-width="5"
+      />
+      <polyline
+        points="60 110 65 120 70 115 75 130 80 125 85 140 90 135 95 150 100 145"
+        stroke="orange"
+        fill="transparent"
+        stroke-width="5"
+      />
+
+      <polygon
+        points="50 160 55 180 70 180 60 190 65 205 50 195 35 205 40 190 30 180 45 180"
+        stroke="green"
+        fill="transparent"
+        stroke-width="5"
+      />
+
+      <path
+        d="M20,230 C40,200 40,200 60,230 S 80,260 100,230"
+        fill="none"
+        stroke="blue"
+        stroke-width="5"
+      />
+    </svg> -->
+
+    <script src="mysvg.js"></script>
+  </body>
+</html>
