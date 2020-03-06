@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="mouseevents.css" />
+  </head>
+  <body>
+    <svg viewBox="0 0 1000 500">
+      <image
+        href="coww-pic.jpg"
+        height="250"
+        width="500"
+        x="250"
+        y="125"
+      ></image>
+      <g clip-path="url(#clipclip)">
+        <image
+          id="clipped-image"
+          href="coww-pic.jpg"
+          height="500"
+          width="1000"
+          x="0"
+          y="0"
+        ></image>
+      </g>
+      <circle
+        id="circle"
+        cx="300"
+        cy="190"
+        r="50"
+        fill="transparent"
+        stroke="red"
+      ></circle>
+      <clipPath id="clipclip">
+        <circle
+          class="circle"
+          id="clipcircle"
+          cx="300"
+          cy="190"
+          r="50"
+          fill="red"
+        ></circle>
+      </clipPath>
+    </svg>
+
+    <script src="mouseevents.js"></script>
+  </body>
+</html>
