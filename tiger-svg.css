@@ -1,0 +1,21 @@
+section {
+  height: 500px;
+  width: 500px;
+}
+
+.mouseenter {
+  transition: fill 2s;
+  fill: black;
+}
+
+section {
+  --eye-color: #99cc32;
+}
+
+#path304,
+#path308,
+#path352,
+#path476 {
+  transition: all 2s;
+  fill: var(--eye-color);
+}

@@ -1,13 +1,21 @@
-#rect {
-  stroke-dasharray: 140;
-  stroke-dashoffset: 140;
-  fill: dodgerblue;
-  stroke: firebrick;
-  animation: changeRect 3s infinite;
+#face circle:first-child {
+  fill: gold;
+  stroke: black;
+  stroke-width: 3px;
+  stroke-miterlimit: inside;
 }
 
-@keyframes changeRect {
-  to {
-    stroke-dashoffset: 0;
+path {
+  fill: red;
+  transition: 0.2s;
+  animation: change 1s ease forwards;
+}
+
+@keyframes change {
+  90% {
+    d: path("M10 10  L 10 300 300 300 Q 360 150  300 10");
+  }
+  100% {
+    d: path("M10 10  L 10 300 300 300 Q 350 150  300 10");
   }
 }

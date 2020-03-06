@@ -8,7 +8,40 @@
   </head>
   <body>
     <h1>My SVGs</h1>
-    <svg
+    <!-- 
+    <svg width="600" height="600" view-box="0 0 600 600">
+      <g id="face">
+        <circle cx="300" cy="300" r="280"></circle>
+        <path
+          d="M130 150 Q 190 100 250 150 M350 150 Q 410 100 460 150"
+          stroke="black"
+        ></path>
+        <circle cx="190" cy="190" r="30" fill="white"></circle>
+        <circle cx="190" cy="190" r="10" fill="black"></circle>
+        <circle cx="410" cy="190" r="30" fill="white"></circle>
+        <circle cx="410" cy="190" r="10" fill="black"></circle>
+        <polyline
+          points="300 250 320 300 280 300"
+          stroke="black"
+          stroke-width="3"
+          fill="transparent"
+        ></polyline>
+        <path d="M130 410 Q 290 600 460 410" fill="red"></path>
+      </g>
+    </svg> -->
+
+    <svg width="600" height="600" view-box="0 0 600 600">
+      <path id="change" d="M10 10  L 10 300 300 300 Q 250 150  300 10">
+        <animate
+          attributeName="d"
+          from="M10 10  L 10 300 300 300 Q 250 150  300 10"
+          to="M10 10  L 10 300 300 300 Q 350 150  300 10"
+          dur="5s"
+          repeatCount="indefinite"
+        />
+      </path>
+    </svg>
+    <!-- <svg
       width="500"
       height="600"
       version="1.1"
@@ -41,7 +74,7 @@
         stroke="blue"
         fill="transparent"
       ></path>
-    </svg>
+    </svg> -->
 
     <!-- <svg
       width="200"
