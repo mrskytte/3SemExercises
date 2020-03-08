@@ -3,6 +3,12 @@
   padding: 0;
 }
 
-svg {
+#svg {
   border: 1px solid black;
+  --cursor: zoom-in;
+  cursor: var(--cursor);
+}
+
+.hide {
+  display: none;
 }
