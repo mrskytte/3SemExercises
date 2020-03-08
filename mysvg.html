@@ -31,15 +31,20 @@
     </svg> -->
 
     <svg width="600" height="600" view-box="0 0 600 600">
-      <path id="change" d="M10 10  L 10 300 300 300 Q 250 150  300 10">
-        <animate
-          attributeName="d"
-          from="M10 10  L 10 300 300 300 Q 250 150  300 10"
-          to="M10 10  L 10 300 300 300 Q 350 150  300 10"
-          dur="5s"
-          repeatCount="indefinite"
-        />
-      </path>
+      <clipPath id="circle">
+        <circle cx="300" cy="190" r="30" fill="white"></circle>
+      </clipPath>
+      <g clip-path="url(#circle)">
+        <path id="change" d="M10 10  L 10 300 300 300 Q 250 150  300 10">
+          <animate
+            attributeName="d"
+            from="M10 10  L 10 300 300 300 Q 250 150  300 10"
+            to="M10 10  L 10 300 300 300 Q 350 150  300 10"
+            dur="5s"
+            repeatCount="indefinite"
+          />
+        </path>
+      </g>
     </svg>
     <!-- <svg
       width="500"
